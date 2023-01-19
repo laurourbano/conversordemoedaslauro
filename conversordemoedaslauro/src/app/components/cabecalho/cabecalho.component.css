@@ -1,0 +1,12 @@
+.container-fluid
+{
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+}
+nav
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
