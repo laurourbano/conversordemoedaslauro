@@ -19,5 +19,8 @@ export class ConversorService {
   constructor(private http: HttpClient) { }
 
   //metodos para buscar informações no backend via api
+  listar(){
+    return this.http.get<any[]>(`${this.BaseUrl}`);
+  }
 }
 

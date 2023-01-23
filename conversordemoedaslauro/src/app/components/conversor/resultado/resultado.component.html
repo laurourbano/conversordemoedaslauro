@@ -3,6 +3,9 @@
 
   <p class="resultado border border-success py-3"> </p>
 
-  <!--{{URLmoedas}}-->
-
+<ul>
+  <li *ngFor="let m of moedas">
+    {{ m.rates.symbol }} -| {{ m.rates.value }}
+  </li>
+</ul>
 </div>
