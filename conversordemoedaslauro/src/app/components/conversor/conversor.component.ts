@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ConversorService } from 'src/app/services/conversor.service';
 import { MoedaService } from 'src/app/services/moeda.service';
 
@@ -9,15 +9,15 @@ import { MoedaService } from 'src/app/services/moeda.service';
   styleUrls: [ './conversor.component.css' ]
 })
 export class ConversorComponent implements OnInit {
-  moedas: Array<any>=[];
+  moedas = [];
 
-  constructor( private moedaService: MoedaService, private conversoService: ConversorService) { }
+  constructor(private moedaService: MoedaService, private conversoService: ConversorService) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.listar();
   }
 
-  listar(){
-    this.conversoService.listar().substcribe((res: any[]) => this.moedas = res);
+  listar() {
+    this.conversoService.listar().subscribe((res: []) => this.moedas = res);
   }
 }
