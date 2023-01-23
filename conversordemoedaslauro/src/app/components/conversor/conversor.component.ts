@@ -1,23 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { ConversorService } from 'src/app/services/conversor.service';
-import { MoedaService } from 'src/app/services/moeda.service';
-
+/* eslint-disable @typescript-eslint/no-empty-function */
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-conversor',
   templateUrl: './conversor.component.html',
   styleUrls: [ './conversor.component.css' ]
 })
-export class ConversorComponent implements OnInit {
-  moedas = [];
+export class ConversorComponent {
 
-  constructor(private moedaService: MoedaService, private conversoService: ConversorService) { }
+  constructor() { }
 
-  ngOnInit() {
-    this.listar();
-  }
 
-  listar() {
-    this.conversoService.listar().subscribe((res: []) => this.moedas = res);
-  }
 }

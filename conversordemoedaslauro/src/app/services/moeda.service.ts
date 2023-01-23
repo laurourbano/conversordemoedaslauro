@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,10 +7,11 @@ import { Injectable } from '@angular/core';
 export class MoedaService {
 
 
-  //moedas: Moeda[] = []
+  moedas = []
 
-  moeda: {} =
-    {}
+  moeda = {
+    
+  }
   constructor() { }
 
 }

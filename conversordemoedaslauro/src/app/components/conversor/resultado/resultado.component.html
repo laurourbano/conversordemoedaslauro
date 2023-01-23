@@ -1,11 +1,9 @@
 <div class="container">
   <p>Resultado: </p>
 
-  <p class="resultado border border-success py-3"> </p>
-
-<ul>
-  <li *ngFor="let m of moedas">
-    {{ m.rates.symbol }} -| {{ m.rates.value }}
-  </li>
-</ul>
+  <ul class="resultado border border-success py-3">
+    <li *ngFor="let m of moedas">
+      {{ m.nome }} -| {{ m.numero }}
+    </li>
+  </ul>
 </div>
