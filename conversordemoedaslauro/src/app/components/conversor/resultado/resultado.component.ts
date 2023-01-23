@@ -10,13 +10,17 @@ import { MoedaService } from 'src/app/services/moeda.service';
 export class ResultadoComponent implements OnInit {
   moedas = [
     {
-      "nome":"a",
-      "numero": 1,
-    },
-    {
-      "nome":"b",
-      "numero": 2,
-    }];
+      "valor":"Valor Inserido",
+      "simbolo": "simbolo",
+      "origem": "Moeda Origem",
+      "taxa": "taxa",
+      "destino": "Moeda Destino",
+      "convertido":"Valor Convertido",
+      "data":"Data",
+      "hora":"Hora",
+    }
+  ];
+
   constructor(private moedaService: MoedaService, private conversoService: ConversorService){}
   ngOnInit() {
     this.listar();
@@ -25,3 +29,4 @@ export class ResultadoComponent implements OnInit {
     this.conversoService.listar().subscribe((res: []) => this.moedas = res);
   }
 }
+

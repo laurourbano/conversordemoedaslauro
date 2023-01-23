@@ -1,9 +1,41 @@
 <div class="container">
   <p>Resultado: </p>
 
-  <ul class="resultado border border-success py-3">
-    <li *ngFor="let m of moedas">
-      {{ m.nome }} -| {{ m.numero }}
-    </li>
-  </ul>
+  <table class="resultado border border-success py-3">
+    <tr>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.valor }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.origem }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.simbolo }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.taxa }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.simbolo }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.destino }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.convertido }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.data }}
+      </th>
+      <th class="p-3" *ngFor="let m of moedas">
+        {{ m.hora }}
+      </th>
+    </tr>
+    <tr>
+      <td>
+
+      </td>
+    </tr>
+
+  </table>
 </div>
