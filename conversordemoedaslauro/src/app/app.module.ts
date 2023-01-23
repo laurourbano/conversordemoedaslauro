@@ -13,6 +13,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HistoricoComponent } from './components/conversor/historico/historico.component';
 import { ResultadoComponent } from './components/conversor/resultado/resultado.component';
+import { MoedaService } from './services/moeda.service';
+import { ConversorService } from './services/conversor.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { ResultadoComponent } from './components/conversor/resultado/resultado.c
     BrowserAnimationsModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [ ConversorService, MoedaService ],
   bootstrap: [
     AppComponent
   ],
