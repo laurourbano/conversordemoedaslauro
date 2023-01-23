@@ -1,0 +1,28 @@
+<div class="container-fluid app-conversor d-flex flex-column">
+  <div class="container pt-2">
+    <form ngSubmit="converter()">
+
+      <div class="d-flex flex-row">
+        <label for="valor" class="mr-3 pr-2">Valor:</label>
+        <input type="text" name="valor" id="valor" placeholder="digite aqui o valor" class="w-25">
+      </div>
+
+      <div class="d-flex flex-row my-3">
+        <label for="moedaOrigem" class="mr-4 pr-3">De: </label>
+        <select name="moedaOrigem" id="moedaOrigem" class="w-25">
+          <option value="consumirAPI">consumirAPI</option>
+        </select>
+        <label for="moedaOrigem" class="mr-4">Para: </label>
+        <select name="moedaDestino" id="moedaDestino" class="w-25">
+          <option value="consumirAPI">consumirAPI</option>
+        </select>
+      </div>
+
+
+      <input type="submit" value="Converter" class="btn btn-success my-3">
+    </form>
+  </div>
+  <app-resultado></app-resultado>
+  <app-historico></app-historico>
+
+</div>
