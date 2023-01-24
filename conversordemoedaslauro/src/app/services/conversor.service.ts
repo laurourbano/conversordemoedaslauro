@@ -20,7 +20,7 @@ export class ConversorService {
 
   //metodos para buscar informações no backend via api
   listar() {
-    return this.http.get<[]>(`${ this.BaseUrl }`);
+    return this.http.get(`${ this.URLmoedas }`);
   }
 }
 

@@ -26,7 +26,6 @@ export class ResultadoComponent implements OnInit {
     this.listar();
   }
   listar() {
-    this.conversoService.listar().subscribe((res: []) => this.moedas = res);
+    this.conversoService.listar().subscribe((res) => console.log(res));
   }
 }
-
